@@ -1,0 +1,469 @@
+<html>
+<head>
+    <title>Helath Guard Ai (Home_page)</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body id="body">
+
+    <!--NAV BAR-->
+    <div id ="nav">
+      
+        <!--LOGO BOX-->
+        <div id="logo_box">
+          <!--LOGO-->
+          <div id="logo_img"> <img src="{{url_for('static',filename='images/icon/logo.png')}}" alt="logo_img">
+          </div><!--LOGO-->
+
+          <div id="logo_name">
+          <p>Health Guard Ai</p>
+          </div>
+        </div><!--LOGO BOX-->
+
+        <div id="nav_bar_text">
+          <div class="nav_txt"><p>Home</p></div>
+          <div class="nav_txt"><p>About</p></div>
+          <div class="nav_txt"><p>Contact</p></div>
+          <div class="nav_txt"><p>Blog</p></div>
+        </div>  
+
+    </div> <!--NAV BAR-->
+    <div id="false_nav"></div> <!--FALSE NAV BAR-->
+
+    <!--Page 1-->
+    <div id="page1" class="background_img">
+      <!--Page 1 DOCTOR IMAGE-->
+       <div id="p1_doctor_img" >
+        <img src="../static/images/p1_doctor.png" alt="doctorimg"> </div>
+
+       <!-- Page 1Content box-->
+       <div id="p1_content_box">
+         <div id="p1_content_box_content"><!--content-->
+             <div id="p1_content_box_content_heading">
+                <p>AI Health Guard</p>
+              </div>
+              <div id="p1_content_box_content_body1">
+                <p>AI Health Guard is a concept  that combines the capabilities of artificial intelligence(AI)  with healthcare to enhance  the quality and efficiency of  medical services.</p>
+              </div>
+          </div><!--content-->
+
+              <!-- Page 1 card box-->
+          <div class="p1_card_box">
+                   <!-- page 1 card 1-->
+                  <div class="card">
+                     <div id="card_img"> <img src="static\images\icon\p1_c1.png" alt="injection_img">
+                     </div>
+                     <div id="card_content">
+                      <p>Health Guard.ai offers symptom-based disease analysis, with accurate health information for informed decision-making</p>
+                     </div>
+                  </div><!--card 1-->
+
+                  <!--page 1 card 2-->
+                  <div class="card">
+              
+                      <div id="card_img"> <img src="static\images\icon\p1_c2.png" alt="injection_img">
+                      </div>
+                      <div id="card_content">
+                       <p>Users input symptoms, receive potential diagnoses, easing worries and aiding in treatment decisions.</p>
+                      </div>
+
+                    
+                  </div><!--page 1 card 2-->
+
+                  <!--page 1 card 3-->
+                  <div class="card">
+                  
+                      <div id="card_img"> <img src="static\images\icon\p1_c3.png" alt="injection_img">
+                      </div>
+                      <div id="card_content">
+                       <p>"Empower yourself with knowledge, for with understanding comes the strength to conquer any challenge that life may throw your way."</p>
+                      </div>
+
+                  </div><!--Page 1 card 3-->
+          </div><!--page 1 card box-->
+      </div><!--page 1 Content box-->  
+    </div> <!--Page 1-->
+
+    <!--Page 2-->
+    <div id="page2" class="background_img">
+          <!--image_Page 2-->
+          <div id="page_2_body_img">
+            <img src="../static/images/body_2 _img.png" alt="Page 2 image" >
+          </div><!--image_Page 2-->
+
+          <!--Page 2 content-->
+          <div id="p2_content">
+                <!--Page 2 Upper  Body-->
+                <div id="p2_upper_body">
+
+                  <!--Page 2 Upper  Body Search bar-->
+                  <div class="container">
+                      <input type="text" id="searchInput" class="search-input" placeholder="Enter the Symptoms...">
+                      <form action="/submit" method="POST">
+                      
+                      <div id="selectedOptions" class="selected-options"></div>
+                      <div id="optionsContainer" class="options-container">
+                          <div class="option">abdominal_pain</div>
+                          <div class="option">abnormal_menstruation</div>
+                          <div class="option">acidity</div>
+                          <div class="option">acute_liver_failure</div>
+                          <div class="option">altered_sensorium</div>
+                          <div class="option">anxiety</div>
+                          <div class="option">back_pain</div>
+                          <div class="option">belly_pain</div>
+                          <div class="option">blackheads</div>
+                          <div class="option">bladder_discomfort</div>
+                          <div class="option">blister</div>
+                          <div class="option">blood_in_sputum</div>
+                          <div class="option">bloody_stool</div>
+                          <div class="option">blurred_and_distorted_vision</div>
+                          <div class="option">breathlessness</div>
+                          <div class="option">brittle_nails</div>
+                          <div class="option">bruising</div>
+                          <div class="option">burning_micturition</div>
+                          <div class="option">chest_pain</div>
+                          <div class="option">chills</div>
+                          <div class="option">cold_hands_and_feets</div>
+                          <div class="option">coma</div>
+                          <div class="option">congestion</div>
+                          <div class="option">constipation</div>
+                          <div class="option">continuous_feel_of_urine</div>
+                          <div class="option">continuous_sneezing</div>
+                          <div class="option">cough</div>
+                          <div class="option">cramps</div>
+                          <div class="option">dark_urine</div>
+                          <div class="option">dehydration</div>
+                          <div class="option">depression</div>
+                          <div class="option">diarrhoea</div>
+                          <div class="option">dischromic _patches</div>
+                          <div class="option">distention_of_abdomen</div>
+                          <div class="option">dizziness</div>
+                          <div class="option">drying_and_tingling_lips</div>
+                          <div class="option">enlarged_thyroid</div>
+                          <div class="option">excessive_hunger</div>
+                          <div class="option">extra_marital_contacts</div>
+                          <div class="option">family_history</div>
+                          <div class="option">fast_heart_rate</div>
+                          <div class="option">fatigue</div>
+                          <div class="option">fluid_overload</div>
+                          <div class="option">foul_smell_of urine</div>
+                          <div class="option">headache</div>
+                          <div class="option">high_fever</div>
+                          <div class="option">hip_joint_pain</div>
+                          <div class="option">history_of_alcohol_consumption</div>
+                          <div class="option">increased_appetite</div>
+                          <div class="option">indigestion</div>
+                          <div class="option">inflammatory_nails</div>
+                          <div class="option">internal_itching</div>
+                          <div class="option">irregular_sugar_level</div>
+                          <div class="option">irritability</div>
+                          <div class="option">irritation_in_anus</div>
+                          <div class="option">itching</div>
+                          <div class="option">joint_pain</div>
+                          <div class="option">knee_pain</div>
+                          <div class="option">lack_of_concentration</div>
+                          <div class="option">lethargy</div>
+                          <div class="option">loss_of_appetite</div>
+                          <div class="option">loss_of_balance</div>
+                          <div class="option">loss_of_smell</div>
+                          <div class="option">malaise</div>
+                          <div class="option">mild_fever</div>
+                          <div class="option">mood_swings</div>
+                          <div class="option">movement_stiffness</div>
+                          <div class="option">mucoid_sputum</div>
+                          <div class="option">muscle_pain</div>
+                          <div class="option">muscle_wasting</div>
+                          <div class="option">muscle_weakness</div>
+                          <div class="option">nausea</div>
+                          <div class="option">neck_pain</div>
+                          <div class="option">nodal_skin_eruptions</div>
+                          <div class="option">obesity</div>
+                          <div class="option">pain_behind_the_eyes</div>
+                          <div class="option">pain_during_bowel_movements</div>
+                          <div class="option">pain_in_anal_region</div>
+                          <div class="option">painful_walking</div>
+                          <div class="option">palpitations</div>
+                          <div class="option">passage_of_gases</div>
+                          <div class="option">patches_in_throat</div>
+                          <div class="option">phlegm</div>
+                          <div class="option">polyuria</div>
+                          <div class="option">prominent_veins_on_calf</div>
+                          <div class="option">puffy_face_and_eyes</div>
+                          <div class="option">pus_filled_pimples</div>
+                          <div class="option">receiving_blood_transfusion</div>
+                          <div class="option">receiving_unsterile_injections</div>
+                          <div class="option">red_sore_around_nose</div>
+                          <div class="option">red_spots_over_body</div>
+                          <div class="option">redness_of_eyes</div>
+                          <div class="option">restlessness</div>
+                          <div class="option">runny_nose</div>
+                          <div class="option">rusty_sputum</div>
+                          <div class="option">scurring</div>
+                          <div class="option">shivering</div>
+                          <div class="option">silver_like_dusting</div>
+                          <div class="option">sinus_pressure</div>
+                          <div class="option">skin</div>
+                          <div class="option">skin_peeling</div>
+                          <div class="option">skin_rash</div>
+                          <div class="option">slurred_speech</div>
+                          <div class="option">small_dents_in_nails</div>
+                          <div class="option">spinning_movements</div>
+                          <div class="option">spotting_ urination</div>
+                          <div class="option">stiff_neck</div>
+                          <div class="option">stomach_bleeding</div>
+                          <div class="option">stomach_pain</div>
+                          <div class="option">sunken_eyes</div>
+                          <div class="option">sweating</div>
+                          <div class="option">swelled_lymph_nodes</div>
+                          <div class="option">swelling_joints</div>
+                          <div class="option">swelling_of_stomach</div>
+                          <div class="option">swollen_blood_vessels</div>
+                          <div class="option">swollen_extremeties</div>
+                          <div class="option">swollen_legs</div>
+                          <div class="option">throat_irritation</div>
+                          <div class="option">toxic_look_(typhos)</div>
+                          <div class="option">ulcers_on_tongue</div>
+                          <div class="option">unsteadiness</div>
+                          <div class="option">visual_disturbances</div>
+                          <div class="option">vomiting</div>
+                          <div class="option">watering_from_eyes</div>
+                          <div class="option">weakness_in_limbs</div>
+                          <div class="option">weakness_of_one_body_side</div>
+                          <div class="option">weight_gain</div>
+                          <div class="option">weight_loss</div>
+                          <div class="option">yellow_crust_ooze</div>
+                          <div class="option">yellow_urine</div>
+                          <div class="option">yellowing_of_eyes</div>
+                          <div class="option">yellowish_skin</div>
+                    
+                    </div>
+                    <button type="submit" id="Analysis_Btn">Analysis</button>
+                    </form>
+                  
+                </div>
+
+                
+
+                  <!--Page 2 Upper  Body Text-->
+                  <div id="p2_txt">
+                    <p>Enter The Symptoms to start analysis</p>
+                  </div><!--Page 2 Upper  Body Text-->
+
+                </div><!--Page 2 Upper  Body-->
+
+                <!--Page 2 Lower  Body-->
+                <div id="p2_lower_body">
+                      <!--Page 2 Card Box 1-->
+                      <div class="p2_card_box">
+                        <div class="p2_card">
+                          
+                              <div id="card_img"> <img src="static\images\icon\p2_c1.png" alt="injection_img">
+                              </div>
+                              <div id="card_content">
+                                  <div class="p2_card_heading">
+                                   <p>Tuberculosis (TB)</p>
+                                  </div>
+                                  <div class="p2_c_content">
+                                    <ul><li>Fatigue</li>
+                                    <li>coughing blood</li>
+                                    <li>Chills</li>
+                                    <li>Fever</li>
+                                    <li>Appetite Loss</li></ul>
+                                  </div>
+                              </div>
+                        </div>
+
+                        <div class="p2_card">
+                          <div id="card_img"> <img src="static\images\icon\p2_c2.png" alt="page_2_c2_img">
+                          </div>
+                          <div id="card_content">
+                                <div class="p2_card_heading">
+                                  <p>Prevention</p></div>
+                                <div class="p2_c_content">
+                                  <ul><li>Stay home. Stay Safe</li>
+                                      <li>Isolate at home</li>
+                                      <li>Wear face masks</li>
+                                      <li>Ventilate the room.</li></ul></div>
+                          </div>
+                        </div>
+                        <div class="p2_card">
+                          <div id="card_img"><img src="static\images\icon\p2_c3.png" alt="page_2_c3_img"></div>
+                          <div id="card_content">
+                                <div class="p2_card_heading">
+                                    <p>Protective Measures</p></div>
+                                <div class="p2_c_content">
+                                    <ul><li>Get Vaccination</li>
+                                        <li>Proper Excecise</li>
+                                        <li>Take medications at the right time</li>
+                                        <li>Eat a balanced diet.</li></ul>
+                                </div>
+                            </div>
+                          
+
+                        </div>
+                      </div><!--Page 2 Card Box 1-->
+
+                      <!--Page 2 Card Box 2-->                      
+                      <div class="p2_card_box">
+                          <div class="p2_card">
+                            <div id="card_img"> <img src="static\images\icon\p2_c4.png" alt="p2_c4_img"></div>
+                            <div id="card_content">
+                                <div class="p2_card_heading">
+                                  <p>Dengue fever</p>
+                                </div>
+                                <div class="p2_c_content">
+                                  <ul><li>High fever</li>
+                                      <li>Body ache</li>
+                                      <li>Rashes</li>
+                                      <li>Joint pain</li></ul>
+                                </div>
+                            </div>
+                          </div>
+                      
+
+                        <div class="p2_card">
+                              <div id="card_img"> <img src="static\images\icon\p2_c5.png" alt="p2_c5_img"></div>
+                              <div id="card_content">
+                                <div class="p2_card_heading">
+                                  <p>Prevention</p>
+                                </div>
+                                <div class="p2_c_content">
+                                 <ul><li>Eliminate Mosquito Breeding Site</li>
+                                     <li>Wear Protective Clothing</li>
+                                     <li>Use Mosquito Nets</li>
+                                     <li>Avoid Mosquito Bites</li></ul>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="p2_card">
+                          <div id="card_img"> <img src="static\images\icon\p2_c6.png" alt="p2_c6_img"></div>
+                          <div id="card_content">
+                            <div class="p2_card_heading">
+                                <p>Protective Measures</p>
+                            </div>
+                            <div class="p2_c_content">
+                                  <ul><li>Proper Rest</li>
+                                   <li>Drinking plenty of fluids: Water, Juice, etc</li>
+                                    <li>Fever control Measures</li>
+                                   <li>Taking acetaminophen or ibuprofen.</li></ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!--Page 2 Card Box 2-->
+
+                </div><!--Page 2 Lower  Body-->
+
+          </div><!--Page 2 Content-->
+
+    </div><!--Page 2-->
+
+    <!--Page 3-->
+    <div id="page3" class="background_img">
+          <!--Page 3 Upper Body-->
+          <div id="p3_upper_body">
+            
+                <!--Page 3 Upper Body image-->
+                <div id="p3_upper_body_image">
+                  <img src="../static/images/p3_doctor_img.png" alt="p3_doctor_img">
+
+                </div><!--Page 3 Upper Body image-->
+                
+              <!--Page 3 Upper Body content box-->
+              <div id="p3_content_box">
+                <!--Page 3 Upper Body content box Heading-->
+                <div id="p3_upper_body_heading">
+                  <p>"Empowering Health Through Symptom-Based Disease Analysis"</p>
+                </div><!--Page 3 Upper Body content box Heading-->
+                
+                <!--Page 3 Upper Body content box text-->
+                <div id="p3_upper_body_text">
+                    <p>"Thank you for entrusting Health Guard.ai with your health concerns. We understand the importance of accurate information when it comes to well-being. With our symptom-based disease analysis, we aim to empower you with knowledge and guidance. Your trust in us fuels our commitment to serving you better. Here's to your continued health and peace of mind."</p>
+                    <p>Thank you for choosing Health Guard.ai.</p>
+                </div><!--Page 3 Upper Body content box text-->
+
+              </div><!--Page 3 Upper Body content box-->
+          </div><!--Page 3 Upper Body-->
+
+          <!--Page 3 lower Body-->
+          <div id="p3_lower_body">
+
+            <!--Page 3 lower Body Bx1 Lets Talk-->
+            <div id="p3_lower_body_box1">
+                  <div id="p3_lower_body_box1_lets_talk">
+                      <p>Let’s Talk</p></div>
+                  <div id="p3_lower_body_box1_txt">
+                      <p>Have any Question or Comments <br>Lets us know</p></div>
+                  <div id="p3_lower_body_box1_contact" >
+                    <p>Contact</p>
+                  </div>
+            </div><!--Page 3 lower Body Bx1 Lets Talk-->
+
+            <!--Page 3 lower Body  quick links-->
+            <div id="p3_lower_body_quick_links">
+                <div id="p3_lower_body_box1_heading2" >
+                  <p>Quick Links</p>
+                </div>
+                <div id="p3_lower_body_box1_txt1">
+                      <p>Home</p>
+                      <p>About</p>
+                      <p>Contact</p>
+                      <p>Blog</p>
+                      <p>Develper</p>
+                </div>
+            </div><!--Page 3 lower Body Quick linkes-->
+            <!--Page 3 lower Body Our Community-->
+
+            <div id="p3_lower_body_community">
+
+              <div id="p3_lower_body_community_box1">
+                <div class="comunity">
+                  <div class="box_icon">
+                    <img src="static\images\icon\instagram.png" alt="instagram">
+                    <p>Instagram</p></div>
+                </div>
+
+                <div class="comunity">
+                  <div class="box_icon">
+                    <img src="static\images\icon\about us.png" alt="about us">
+                    <p>About Us</p></div>
+                </div>
+
+                <div class="comunity">
+                  <div class="box_icon">
+                    <img src="static\images\icon\github.png" alt="Github">
+                    <p>Github</p></div>
+                </div>
+                
+              </div>
+              
+              <div id="p3_lower_body_community_box1">
+                    <div class="comunity">
+                      <div class="box_icon">
+                        <img src="static\images\icon\Youtube.png" alt="Youtube">
+                        <p>Youtube</p></div>
+                    </div>
+
+                    <div class="comunity">
+                      <div class="box_icon">
+                        <img src="static\images\icon\facebook.png" alt="Facebook">
+                        <p>Facebook</p></div>
+                    </div>
+
+                    <div class="comunity">
+                      <div class="box_icon">
+                        <img src="static\images\icon\about us.png" alt="X: Twitter">
+                        <P>Twitter : X</P></div>
+                    </div>
+                </div>
+
+            </div><!--Page 3 lower Body Our Community-->
+
+            
+          </div><!--Page 3 lower Body-->
+
+
+    </div><!--Page 3-->
+
+  <script type="text/javascript" src="{{ url_for('static',filename='script/script.js')}}"></script>
+</body>
+</html>

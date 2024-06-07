@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diagnosis Result</h1>
+        <div class="result-section">
+            <h2>Predicted Disease: {{ predicted_disease }}</h2>
+            <p><strong>Description:</strong> {{ dis_des }}</p>
+
+            <h3>Precautions:</h3>
+            <ul>
+                {% for precaution in my_precautions %}
+                    <li>{{ precaution }}</li>
+                {% endfor %}
+            </ul>
+
+            <h3>Medications:</h3>
+            <ul>
+                {% for medication in medications %}
+                    <li>{{ medication }}</li>
+                {% endfor %}
+            </ul>
+
+            <h3>Diet Recommendations:</h3>
+            <ul>
+                {% for diet_item in my_diet %}
+                    <li>{{ diet_item }}</li>
+                {% endfor %}
+            </ul>
+
+            <h3>Workout Recommendations:</h3>
+            <ul>
+                {% for workout_item in workout %}
+                    <li>{{ workout_item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <a href="{{ url_for('index') }}" class="btn">Go Back</a>
+    </div>
+</body>
+</html>
