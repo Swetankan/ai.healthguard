@@ -1,7 +1,7 @@
 // script.js
 $(document).ready(function() {
     $('#options-list').select2({
-        placeholder: 'Select options'
+        placeholder: 'Search/Select Options...'
     });
 
     $('#options-list').on('change', function() {
