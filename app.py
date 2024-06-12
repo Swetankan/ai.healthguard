@@ -15,8 +15,8 @@ medications = pd.read_csv('datasets/medications.csv')
 diets = pd.read_csv("datasets/diets.csv")
 
 # Load model
-svc = pickle.load(open('svc.pkl', 'rb'))
-le = pickle.load(open('label_encoder.pkl', 'rb'))
+svc = pickle.load(open('datasets/svc.pkl', 'rb'))
+le = pickle.load(open('datasets/label_encoder.pkl', 'rb'))
 
 # Normalize column names and data to handle inconsistencies
 workout.rename(columns={'disease': 'Disease'}, inplace=True)
@@ -71,23 +71,26 @@ def developer():
 def blog():
     return render_template("blog.html")
 
-@app.route('/submit', methods=['POST'])
+@app.route('/search', methods=['POST'])
 def submit():
     if request.method == 'POST':
         selected_values = request.form.getlist('options')
-        print("Selected values:", selected_values)
-        return redirect(url_for('result', selected_values=selected_values))
+        print("Selected values:", selected_values)  # Debugging print statement
+        predicted_disease = predict_disease(selected_values)
+        return redirect(url_for('result', predicted_disease=predicted_disease))
     else:
         return "Invalid request method"
 
 @app.route('/result')
 def result():
-    selected_values = request.args.getlist('selected_values')
-    print("Received values in result route:", selected_values)
-    predicted_disease = predict_disease(selected_values)
+    predicted_disease = request.args.get('predicted_disease')
+    print("Predicted disease:", predicted_disease)  # Debugging print statement
+    if not predicted_disease:
+        return "No predicted disease received."
+
     dis_des, precautions_list, medications, diet, workout = helper(predicted_disease)
     my_precautions = [precaution for precaution in precautions_list]
-    return render_template('result.html', selected_values=selected_values, predicted_disease=predicted_disease.capitalize(), dis_des=dis_des, my_precautions=my_precautions, medications=medications, my_diet=diet, workout=workout)
+    return render_template('result.html', predicted_disease=predicted_disease.capitalize(), dis_des=dis_des, my_precautions=my_precautions, medications=medications, my_diet=diet, workout=workout)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=8000)
