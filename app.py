@@ -77,7 +77,7 @@ def submit():
         selected_values = request.form.getlist('options')
         print("Selected values:", selected_values)  # Debugging print statement
         predicted_disease = predict_disease(selected_values)
-        return redirect(url_for('result', predicted_disease=predicted_disease))
+        return redirect(url_for('result', predicted_disease=predicted_disease,))
     else:
         return "Invalid request method"
 
@@ -90,7 +90,7 @@ def result():
 
     dis_des, precautions_list, medications, diet, workout = helper(predicted_disease)
     my_precautions = [precaution for precaution in precautions_list]
-    return render_template('result.html', predicted_disease=predicted_disease.capitalize(), dis_des=dis_des, my_precautions=my_precautions, medications=medications, my_diet=diet, workout=workout)
+    return render_template('result.html', predicted_disease=predicted_disease.capitalize(), dis_des=dis_des, my_precautions=my_precautions, medications=medications, my_diet=diet, workout=workout,selected_values)
 
 if __name__ == '__main__':
     app.run(debug=True,port=8000)
