@@ -1,0 +1,58 @@
+#false_nav
+{
+  display: flex;
+  height: 7%;
+  width: 100%;
+  align-items: center;
+}
+
+.background_img
+{
+  background-image: url("https://img.freepik.com/premium-vector/abstract-blue-hexagon-gradient-background-with-heartbeat-cardiogram-honeycomb-pattern-futuristic-sci-fi-style-modern-medicine-copy-space-vector-illustration_297535-3401.jpg?w=1060");
+  background-size: cover;
+}
+
+#nav
+{
+  display: flex;
+  flex-direction: row;
+  height: 7%;
+  width: 100%;
+  background-color: #f5f5dc;
+  position: fixed;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+#logo_box
+{
+  display: flex;
+  flex-direction: row;
+}
+
+#logo_img img
+{
+ display: flex;
+ height: 100%;
+ width:100%;
+
+}
+
+#nav_bar_text
+{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  text-align: center;
+  justify-content: space-around;
+  margin-left: 11%;
+}
+
+#nav_bar_text a{
+  color: black;
+  text-decoration: none;
+}

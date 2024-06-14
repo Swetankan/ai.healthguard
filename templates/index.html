@@ -35,7 +35,7 @@
           <a href="">Home</a>
           <a href="{{ url_for('about') }}">About</a>
           <a a href="{{ url_for('contact') }}">Contact</a>
-          <a a href="{{ url_for('blog') }}">Blog</a>
+          <a a href="{{ url_for('dashboard.dashboard') }}">Dashboard</a>
         </div>  
 
     </div> <!--NAV BAR-->
@@ -45,7 +45,7 @@
     <div id="page1" class="background_img">
       <!--Page 1 DOCTOR IMAGE-->
        <div id="p1_doctor_img" >
-        <img src="../static/images/p1_doctor.png" alt="doctorimg"> </div>
+        <img src="../static/images/portrait-3d-male-doctor1.png" alt="doctorimg"> </div>
 
        <!-- Page 1Content box-->
        <div id="p1_content_box">
@@ -58,27 +58,39 @@
                   <br> AI Health Guard can analyze vast amounts of medical data swiftly, predict disease outbreaks, and assist in preventive healthcare. It supports healthcare professionals in decision-making and streamlines administrative tasks, ultimately leading to a more effective and patient-centered healthcare system.</p>
               </div>
           </div><!--content-->
+          <h2 id="most_viral_h">Most viral disease nowdays</h2>
 
               <!-- Page 1 card box-->
           <div class="p1_card_box">
                    <!-- page 1 card 1-->
                   <div class="card">
-                     <div id="card_img"> <img src="static\images\icon\p1_c1.png" alt="injection_img">
-                     </div>
+                     <div id="card_img"> <img src="static\images\icon\p2_c1.png" alt="virus-img"></div>
+
                      <div id="card_content">
-                      <p>"Health Guard.ai offers symptom-based disease analysis, providing accurate health information to facilitate informed decision-making."<br>
-                        <br>"This tool uses advanced algorithms to assess symptoms and deliver reliable data, ensuring users are better equipped to understand their health conditions."</p>
-                     </div>
+                        <h2>Tuberculosis (TB)</h2>
+                        <div class="p2_c_content">
+                          <ul><li>Fatigue</li>
+                          <li>coughing blood</li>
+                          <li>Chills</li>
+                          <li>Fever</li>
+                          <li>Appetite Loss</li></ul>
+                        </div>
+                    </div>
+                     
                   </div><!--card 1-->
 
                   <!--page 1 card 2-->
                   <div class="card">
               
-                      <div id="card_img"> <img src="static\images\icon\p1_c2.png" alt="injection_img">
+                      <div id="card_img"> <img src="static\images\icon\p2_c2.png" alt="injection_img">
                       </div>
                       <div id="card_content">
-                       <p>"Users input their symptoms into Health Guard.ai and receive potential diagnoses, helping to ease worries and guide treatment decisions." <br>
-                        <br>"This user-friendly platform supports individuals by offering a clearer understanding of their health and potential next steps for care."</p>
+                        <h2>Prevention</h2>
+                        <div class="p2_c_content">
+                          <ul><li>Stay home. Stay Safe</li>
+                              <li>Isolate at home</li>
+                              <li>Wear face masks</li>
+                              <li>Ventilate the room.</li></ul></div>
                       </div>
 
                     
@@ -87,11 +99,15 @@
                   <!--page 1 card 3-->
                   <div class="card">
                   
-                      <div id="card_img"> <img src="static\images\icon\p1_c3.png" alt="injection_img">
+                      <div id="card_img"> <img src="static\images\icon\p2_c3.png" alt="injection_img">
                       </div>
                       <div id="card_content">
-                       <p>"Empower yourself with knowledge, for with understanding comes the strength to conquer any challenge that life may throw your way."<br> 
-                        <br>This statement underscores the importance of being informed and how knowledge can provide the confidence needed to face life's difficulties."</p>
+                      <h2>Protective Measures</h2>
+                      <div class="p2_c_content">
+                          <ul><li>Get Vaccination</li>
+                              <li>Proper Excecise</li>
+                              <li>Take medications at the right time</li>
+                              <li>Eat a balanced diet.</li></ul></div>
                       </div>
 
                   </div><!--Page 1 card 3-->
@@ -251,49 +267,39 @@
                 <!--Page 2 Lower  Body-->
                 <div id="p2_lower_body">
                       <!--Page 2 Card Box 1-->
-                      <p id="p2_txt">Viral Disease</p>
+                      <p id="p2_txt">Advanced Analysis</p>
                       <div class="p2_card_box">
                         <div class="p2_card">
                           
-                              <div id="card_img"> <img src="static\images\icon\p2_c1.png" alt="p2_card1">
+                              <div id="card_img"> <img src="static\images\icon\p2_dibaties_img.png" alt="dibaties-img">
                               </div>
                               <div id="card_content">
-                                  <div class="p2_card_heading">
-                                   <p>Tuberculosis (TB)</p>
-                                  </div>
+                                   <h2>Dibaties Analysis</h2>
                                   <div class="p2_c_content">
-                                    <ul><li>Fatigue</li>
-                                    <li>coughing blood</li>
-                                    <li>Chills</li>
-                                    <li>Fever</li>
-                                    <li>Appetite Loss</li></ul>
+                                    <p>Monitor blood sugar, maintain a balanced diet, exercise regularly, and consult your doctor to manage and prevent diabetes effectively.</p>
+                                    <form action="/diabetes"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
                                   </div>
                               </div>
                         </div>
 
                         <div class="p2_card">
-                          <div id="card_img"> <img src="static\images\icon\p1_c2.png" alt="page_2_c2_img">
+                          <div id="card_img"> <img src="static\images\icon\p2_heart_img.png" alt="heart">
                           </div>
                           <div id="card_content">
-                                <div class="p2_card_heading">
-                                  <p>Prevention</p></div>
+                                <h2>Heart</h2>
                                 <div class="p2_c_content">
-                                  <ul><li>Stay home. Stay Safe</li>
-                                      <li>Isolate at home</li>
-                                      <li>Wear face masks</li>
-                                      <li>Ventilate the room.</li></ul></div>
+                                  <p>Monitor blood pressure, cholesterol, heart rate, and lifestyle habits to maintain heart health and prevent cardiovascular diseases.</p>
+                                  <form action="/heart"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
+                                </div>
                           </div>
                         </div>
                         <div class="p2_card">
-                          <div id="card_img"><img src="static\images\icon\p2_c3.png" alt="page_2_c3_img"></div>
+                          <div id="card_img"><img src="static\images\icon\p2_pregnent_women.png" alt="page_2_c3_img"></div>
                           <div id="card_content">
-                                <div class="p2_card_heading">
-                                    <p>Protective Measures</p></div>
+                                <h2>Pregnancy Checker</h2>
                                 <div class="p2_c_content">
-                                    <ul><li>Get Vaccination</li>
-                                        <li>Proper Excecise</li>
-                                        <li>Take medications at the right time</li>
-                                        <li>Eat a balanced diet.</li></ul>
+                                  <p>Check blood pressure, glucose, temperature, and heart rate regularly to identify potential pregnancy risks and ensure a healthy pregnancy.</p>
+                                  <form action="/pregnancy"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
                                 </div>
                             </div>
                           
@@ -316,7 +322,7 @@
             
                 <!--Page 3 Upper Body image-->
                 <div id="p3_upper_body_image">
-                  <img src="../static/images/p3_doctor_img.png" alt="p3_doctor_img">
+                  <img src="../static/images/image.png" alt="p3_doctor_img">
 
                 </div><!--Page 3 Upper Body image-->
                 

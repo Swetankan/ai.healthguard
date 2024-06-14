@@ -13,8 +13,10 @@
 
 .background_img
 {
-  background-image: url("../images/background.jpg");
+  background-image: url("https://img.freepik.com/premium-vector/abstract-blue-hexagon-gradient-background-with-heartbeat-cardiogram-honeycomb-pattern-futuristic-sci-fi-style-modern-medicine-copy-space-vector-illustration_297535-3401.jpg?w=1060");
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 #nav
@@ -61,6 +63,7 @@
   color: black;
   text-decoration: none;
 }
+
 #page1
 {
   display: flex;
@@ -103,7 +106,11 @@
   text-align: center;
   text-shadow: 100pc;
 }
-
+#most_viral_h{
+  margin-top: 3%;
+  margin-bottom: -3%;
+  margin-left: 2.5%;
+}
 #p1_content_box_content_body1
 {
   height: 50%;
@@ -149,6 +156,7 @@
   height: 73%;
   width: 100%;
   flex-direction: column;
+  align-items: center;
 }
 
 #page2
@@ -245,7 +253,18 @@
   font-style: normal;
   font-size: 20px;
 }
+#card_content form{
+  text-align: center;
+}
 
+#card_content form button {
+  height: 100%;
+  width: 40%;
+  border-radius: 20px;
+  border-color: black ;
+  background-color: rgb(139, 139, 243);
+  justify-self: center;
+}
 .p2_upper_body
 {
   display: flex;
@@ -304,15 +323,6 @@
   height: 75%;
   word-wrap: normal;
   
-}
-.p2_card_heading
-{
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 20%;
-  font-size: larger;
-  font-weight: bold;
 }
 
 .p2_card_data

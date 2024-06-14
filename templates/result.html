@@ -1,34 +1,7 @@
-<html>
-<head>
-    <title>Diagnosis Result</title>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Prata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/result_styles.css') }}">
-</head>
-<body class="background_img" id="body">
-<!--NAV BAR-->
+{% extends "base.html" %}
+{% block result %}
 
-<div id ="nav">
-    <div id="logo_box">
-        <div id="logo_img"> <img src="{{url_for('static',filename='images/icon/logo.png')}}" alt="logo_img">
-        </div>
-        <div id="logo_name">
-            <p>Ai Health Guard</p>
-        </div>
-    </div>
-    <div id="nav_bar_text">
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('about') }}">About</a>
-        <a href="{{ url_for('contact') }}">Contact</a>
-        <a href="{{ url_for('blog') }}">Blog</a>
-    </div>
-</div> <!--NAV BAR-->
-<div id="false_nav"></div> <!--FALSE NAV BAR-->
-
-<div id="result">
+<div class="result"> <style>@import url(../static/css/result_styles.css);</style>
         
     <div class="result_heading">
         <div class="result-section">
@@ -91,5 +64,4 @@
 
     </div>
 </div>
-</body>
-</html>
+{% endblock %}
