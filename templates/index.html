@@ -18,29 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 <body id="body">
-
-    <!--NAV BAR-->
-    <div id ="nav">
-      
-        <!--LOGO BOX-->
-        <div id="logo_box">
-          <!--LOGO-->
-          <div id="logo_img"> <img src="{{url_for('static',filename='images/icon/logo.png')}}" alt="logo_img">
-          </div><!--LOGO-->
-
-          <p>Ai Health Guard</p>
-        </div><!--LOGO BOX-->
-
-        <div id="nav_bar_text">
-          <a href="">Home</a>
-          <a href="{{ url_for('about') }}">About</a>
-          <a a href="{{ url_for('contact') }}">Contact</a>
-          <a a href="{{ url_for('dashboard.dashboard') }}">Dashboard</a>
-        </div>  
-
-    </div> <!--NAV BAR-->
-    <div id="false_nav"></div> <!--FALSE NAV BAR-->
-
+  {% extends "base.html" %}
+  {% block content %}
     <!--Page 1-->
     <div id="page1" class="background_img">
       <!--Page 1 DOCTOR IMAGE-->
@@ -343,56 +322,10 @@
 
               </div><!--Page 3 Upper Body content box-->
           </div><!--Page 3 Upper Body-->
-
-          <!--Page 3 lower Body-->
-          <div id="p3_lower_body">
-
-            <!--Page 3 lower Body Bx1 Lets Talk-->
-            <div id="p3_lower_body_box1">
-                  <h2>Let’s Talk</h2>
-                  <h3>Have any Question or Comments <br> Lets us know</h3>
-                  <form action="/contact">
-                    <button type="submit">Contact Us</button>
-                  </form>
-            </div><!--Page 3 lower Body Bx1 Lets Talk-->
-
-            <!--Page 3 lower Body  quick links-->
-            <div id="p3_lower_body_quick_links">
-                  <h2>Quick Links</h2>
-                  <a href="">Home</a>
-                  <a href="{{ url_for('about') }}">About</a>
-                  <a href="{{ url_for('contact') }}">Contact</a>
-                  <a href="{{ url_for('blog') }}">Blog</a>
-                  <a href="{{ url_for('developer') }}">Developer</a>
-            </div>
-            <!--Page 3 lower Body Quick linkes-->
-            <!--Page 3 lower Body Our Community-->
-
-            <div id="p3_lower_body_community">
-              <h2>Our Community</h2>
-              <div id="logo_container">
-                <div class="logo_box">
-                  <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/">Instagram</a></i>
-                  <i class="fa-brands fa-youtube"><a href="https://www.youtube.com/">Youtube</a></i>
-                  <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/">Facebook</a></i>
-                </div>
-
-                <div class="logo_box">
-                  <i class="fa-brands fa-github"><a href="https://github.com/">Github</a></i>
-                  <i class="fa-brands fa-x-twitter"><a href="https://x.com/">Twitter</a></i>
-                  <i class="fa-solid fa-people-group"><a href="/templates/about.html">About Us</a></i>
-                </div>
-            </div>
-
-            </div><!--Page 3 lower Body Our Community-->
-
-            
-          </div><!--Page 3 lower Body-->
-
-
     </div><!--Page 3-->
 
   
   <script type="text/javascript" src="{{ url_for('static',filename='script/script.js')}}"></script>
+  {% endblock %}
 </body>
 </html>

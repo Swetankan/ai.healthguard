@@ -4,7 +4,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
+img{
+    z-index: 0;
+}
 
 .container {
     margin: 0 auto;
@@ -67,7 +69,6 @@ body {
     font-size: 16px; 
 }
 .form1{
-<<<<<<< HEAD
     flex-direction: column;
     background-color: white;
     width: 70%;
@@ -83,9 +84,16 @@ body {
     display: block;
     margin: 0 auto;
     margin-bottom: 2%;
-=======
-    background-color: white;
-    width: 70%;
-    text-align:left;
->>>>>>> d0e79326ce9c0b82530eaf76b97619cb1adc29a7
 }
+.nav_bar_text a:hover{
+    color: salmon;
+    border-bottom: solid 3px;
+    border-bottom-color:#0CAFFF;
+    border-bottom-left-radius : 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    transition: all 1s ease 0s;
+  }
+  

@@ -16,7 +16,7 @@ dashboard_bp = Blueprint('dashboard', __name__)
 @dashboard_bp.route('/', methods=['GET', 'POST'])
 def dashboard():
     # Load the dataset
-    df = pd.read_csv('Dataset/Original_Dataset.csv')
+    df = pd.read_csv('datasets/advance/Dataset/Original_Dataset.csv')
     df = shuffle(df, random_state=42)
     
     # Frequency of each disease
@@ -123,7 +123,7 @@ def dashboard():
 
 
     # Visualization on Encoded Dataset
-    df_v1 = pd.read_csv('Dataset/df_v1.csv')
+    df_v1 = pd.read_csv('datasets/advance/Dataset/df_v1.csv')
     df_v1 = shuffle(df_v1, random_state=42)
 
     # Create a multiselect widget to choose symptoms for the 3D scatter plot

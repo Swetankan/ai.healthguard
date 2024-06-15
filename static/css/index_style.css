@@ -3,67 +3,6 @@
   padding: 0;
 }
 
-#false_nav
-{
-  display: flex;
-  height: 7%;
-  width: 100%;
-  align-items: center;
-}
-
-.background_img
-{
-  background-image: url("https://img.freepik.com/premium-vector/abstract-blue-hexagon-gradient-background-with-heartbeat-cardiogram-honeycomb-pattern-futuristic-sci-fi-style-modern-medicine-copy-space-vector-illustration_297535-3401.jpg?w=1060");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-#nav
-{
-  display: flex;
-  flex-direction: row;
-  height: 7%;
-  width: 100%;
-  background-color: #f5f5dc;
-  position: fixed;
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  
-}
-
-#logo_box
-{
-  display: flex;
-  flex-direction: row;
-}
-
-#logo_img img
-{
- display: flex;
- height: 100%;
- width:100%;
-
-}
-
-#nav_bar_text
-{
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 60%;
-  text-align: center;
-  justify-content: space-around;
-  margin-left: 11%;
-}
-
-#nav_bar_text a{
-  color: black;
-  text-decoration: none;
-}
-
 #page1
 {
   display: flex;
@@ -74,10 +13,16 @@
 #p1_doctor_img
 {
   display: flex;
-  height: auto;
+  height: 100%;
   width: auto;
-}
+  margin-left: 25px;
 
+}
+#p1_doctor_img img{
+  height: 80%;
+
+  align-self: flex-end;
+}
 #p1_content_box
 {
  display: flex;
@@ -334,7 +279,7 @@
 #page3
 {
   display: flex;
-  height: 93%;
+  height: 50%;
   width: 100%;
   flex-direction: column;
 }
@@ -350,7 +295,7 @@
 #p3_upper_body_image
 {
   display: flex;
-  height: 100%;
+  height: 170%;
   width: 40%;
   align-self:baseline;
   flex-direction: row;
@@ -387,124 +332,4 @@
   word-wrap: normal;
   font-size: 18;
   text-align: center;
-}
-
-#p3_lower_body
-{
-  display: flex;
-  height: 40%;
-  width: 100%;
-  flex-direction: row;
-  background-color: rgb(1, 0, 0,0.7);
-  justify-content: space-between;
-
-}
-
-#p3_lower_body_box1
-{
-  display: flex;
-  height: 100%;
-  width: 20%;
-  flex-direction: column;
-  margin-left: 3%;
-  color: white;
-}
-
-#p3_lower_body_box1 form button{
-  background-color: blue;
-  color: white;
-  border-radius: 20px;
-  height: 100%;
-  width: 40%;
-  font-size:large ;
-}
-
-#p3_lower_body_box1_lets_talk
-{
-  display: flex;
-  color: white;
-  font-size: xx-large;
-  height: 20%;
-  width: 100%;
-}
-
-#p3_lower_body_box1_txt{
-  display: flex;
-  color: white;
-  font-size: large;
-  flex-direction: column;
-}
-
-#p3_lower_body_quick_links
-{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 20%;
-  color: white;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#p3_lower_body_quick_links a{
-  color: #f0f0f0;
-  text-decoration: none;
-}
-
-#p3_lower_body_community
-{
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  width: 30%;
-  color: white;
-}
-#p3_lower_body_community h2{
-  text-align: center;
-  margin-left: -30%;
-}
-
-
-#p3_lower_body_community_box1
-{
-  display: flex;
-  height: 100%;
-  width: 50%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
-
-/* icons*/
-.logo_box{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: space-evenly;
-}
-
-.logo_box a{
-  font-size: 14px;
-  margin-left: 10px;
-  margin-bottom: 10%;
-  color:white;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-
-
-}
-
-#logo_container{
-  display: flex;
-  flex-direction: row;
-}
-.fa-brands{
-  font-size: 40px;
-  margin: 3%;
-}
-.fa-solid{
-  font-size: 40px;
-  margin: 3%;
 }

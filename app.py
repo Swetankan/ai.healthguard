@@ -200,7 +200,7 @@ def diabetes():
         else:
             prediction_text = 'The person is not diabetic'
     
-    return render_template('diabetes.html', prediction_text=prediction_text)
+    return render_template('diabetes.html', prediction_text=prediction_text,active_page='index')
 
 if __name__ == '__main__':
     app.run(debug=True)
