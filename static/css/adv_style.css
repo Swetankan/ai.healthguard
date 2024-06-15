@@ -67,6 +67,7 @@ body {
     font-size: 16px; 
 }
 .form1{
+<<<<<<< HEAD
     flex-direction: column;
     background-color: white;
     width: 70%;
@@ -82,4 +83,9 @@ body {
     display: block;
     margin: 0 auto;
     margin-bottom: 2%;
+=======
+    background-color: white;
+    width: 70%;
+    text-align:left;
+>>>>>>> d0e79326ce9c0b82530eaf76b97619cb1adc29a7
 }
