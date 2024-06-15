@@ -2,10 +2,9 @@
 {% block content %}
 <div class="container">
     <h1>Diabetes Prediction</h1>
-    <form action="/diabetes" method="post">
+    <form action="/diabetes" method="post" class="form1">
         <div class="form-group">
-            <label for="Pregnancies">Number of Pregnancies</label>
-            <input type="text" id="Pregnancies" name="Pregnancies" required>
+            <label for="Pregnancies">Number of Pregnancies</label><input type="text" id="Pregnancies" name="Pregnancies" required>
         </div>
         <div class="form-group">
             <label for="Glucose">Glucose Level</label>
@@ -35,7 +34,9 @@
             <label for="Age">Age</label>
             <input type="text" id="Age" name="Age" required>
         </div>
-        <button type="submit" class="button button-primary">Predict Diabetes</button>
+        <div id="btn">
+            <button type="submit" class="button button-primary">Predict Diabetes</button>
+        </div>
     </form>
     {% if prediction_text %}
     <div class="result">

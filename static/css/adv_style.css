@@ -8,10 +8,14 @@ body {
 
 .container {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-group {
     margin-bottom: 15px;
+    margin: 3%;
 }
 
 .form-group label {
@@ -61,4 +65,21 @@ body {
     width: 100%; 
     padding: 8px; 
     font-size: 16px; 
+}
+.form1{
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    align-items: center;
+}
+#btn1{
+    display: flex;
+    justify-content: center; /* Added */
+    width: 100%;
+    margin: 0 auto;
+}
+#btn .button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
 }

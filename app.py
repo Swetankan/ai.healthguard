@@ -22,7 +22,7 @@ svc = pickle.load(open('datasets/svc.pkl', 'rb'))
 le = pickle.load(open('datasets/label_encoder.pkl', 'rb'))
 
 #Advance Load models
-pregnancy_model = pickle.load(open("datasets/advance/models/Pregnancy.sav", 'rb'))
+pregnancy_model = pickle.load(open("datasets/advance/models/pregnancy_model.pkl", 'rb'))
 heart_model = pickle.load(open("datasets/advance/models/Heart.sav", 'rb'))
 diabetic_model = pickle.load(open("datasets/advance/models/Diabetes.sav", 'rb'))
 

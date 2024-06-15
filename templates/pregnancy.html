@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container">
     <h1>Pregnancy Risk Prediction</h1>
-    <form action="/pregnancy" method="POST">
+    <form action="/pregnancy" method="POST" class="form1">
         <div class="form-group">
             <label for="age">Age of the Person</label>
             <input type="text" id="age" name="age" required>
@@ -23,7 +23,8 @@
             <label for="heartRate">Heart Rate (beats per minute)</label>
             <input type="text" id="heartRate" name="heartRate" required>
         </div>
-        <button type="submit" class="button button-primary">Pregnancy Test Result</button>
+        <div id="btn">
+         <button type="submit" class="button button-primary">Pregnancy Test Result</button></div>
     </form>
     {% if risk_level %}
     <div class="result {{ color }}">
