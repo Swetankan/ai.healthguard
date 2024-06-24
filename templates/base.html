@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +27,11 @@
     <div class ="nav" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
       
         <!--LOGO BOX-->
-        <div id="logo_box">
+        <span id="logo_box">
           <!--LOGO-->
-          <div id="logo_img"> <img src="{{url_for('static',filename='images/icon/logo.png')}}" alt="logo_img">
-          </div><!--LOGO-->
-
+         <img src="{{url_for('static',filename='images/icon/logo.png')}}" alt="logo_img">
           <p>Ai Health Guard</p>
-        </div><!--LOGO BOX-->
+        </span><!--LOGO BOX-->
 
         <div class="nav_bar_text">
           <a href="{{ url_for('index') }}" class="{% if request.endpoint == 'index' %}active{% endif %}">Home</a>

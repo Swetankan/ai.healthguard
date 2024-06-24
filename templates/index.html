@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Helath Guard Ai (Home_page)</title>
     <meta charset="UTF-8">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/index_style.css')}}">
        <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -29,15 +30,14 @@
        <!-- Page 1Content box-->
        <div id="p1_content_box">
          <div id="p1_content_box_content"><!--content-->
-             <div id="p1_content_box_content_heading">
-                <p>AI Health Guard</p>
-              </div>
+              <h1 id="heading1"></h1>
               <div id="p1_content_box_content_body1" class="para_txt">
                 <p>AI Health Guard merges artificial intelligence with healthcare to improve medical services' quality and efficiency. By leveraging AI's analytical power, it enables accurate diagnostics, personalized treatment plans, and real-time health monitoring. This innovative approach enhances patient care, reduces medical errors, and optimizes resource allocation. <br>
                   <br> AI Health Guard can analyze vast amounts of medical data swiftly, predict disease outbreaks, and assist in preventive healthcare. It supports healthcare professionals in decision-making and streamlines administrative tasks, ultimately leading to a more effective and patient-centered healthcare system.</p>
               </div>
+              <h2 id="most_viral_h"  data-aos="fade-right"  data-aos-duration="1000">Most viral disease nowdays</h2>
           </div><!--content-->
-          <h2 id="most_viral_h"  data-aos="fade-right"  data-aos-duration="1000">Most viral disease nowdays</h2>
+          
 
               <!-- Page 1 card box-->
           <div class="p1_card_box" data-aos="zoom-in" data-aos-duration="700">
@@ -61,7 +61,7 @@
                   <!--page 1 card 2-->
                   <div class="card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500">
               
-                      <div id="card_img"> <img src="static\images\icon\p2_c2.png" alt="injection_img">
+                      <div id="card_img"> <img src="static\images\icon\p2_microscope.png" alt="injection_img">
                       </div>
                       <div id="card_content">
                         <h2>Prevention</h2>
@@ -107,7 +107,7 @@
                 <!--<div id="p2_upper_body">-->
                       
                   <div class="p2_upper_body" >
-                    <div id="select_sym_txt"  data-aos="zoom-in"><p>Select the Symptoms</p></div>
+                    <h2 id="select_sym_txt"  data-aos="zoom-in">Select the Symptoms</h2>
                     <form id="search-form" action="/search" method="POST"  data-aos="fade-left" data-aos-once="true">
                           <div id ="option_box">
                             <select id="options-list" name="options" multiple>
@@ -247,46 +247,30 @@
                 <div id="p2_lower_body">
                       <!--Page 2 Card Box 1-->
                       <p id="p2_txt"  data-aos="zoom-in">Advanced Analysis</p>
+                
                       <div class="p2_card_box">
-                        <div class="p2_card" data-aos="zoom-in" data-aos-duration="700" >
-                          
-                              <div id="card_img"> <img src="static\images\icon\p2_dibaties_img.png" alt="dibaties-img">
-                              </div>
-                              <div id="card_content">
-                                   <h2>Dibaties Analysis</h2>
-                                  <div class="p2_c_content">
-                                    <p>Monitor blood sugar, maintain a balanced diet, exercise regularly, and consult your doctor to manage and prevent diabetes effectively.</p>
-                                    <form action="/diabetes"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
-                                  </div>
-                              </div>
+                        <div class="p2_card" data-aos="zoom-in" data-aos-duration="700" >                          
+                              <img src="static\images\icon\p2_dibaties_img.png" alt="dibaties-img">
+                              <h2>Dibaties Analysis</h2>
+                              <p>Monitor blood sugar, maintain a balanced diet, exercise regularly, and consult your doctor to manage and prevent diabetes effectively.</p>
+                              <form action="/diabetes"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
                         </div>
 
                         <div class="p2_card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500">
-                          <div id="card_img"> <img src="static\images\icon\p2_heart_img.png" alt="heart">
-                          </div>
-                          <div id="card_content">
-                                <h2>Heart</h2>
-                                <div class="p2_c_content">
-                                  <p>Monitor blood pressure, cholesterol, heart rate, and lifestyle habits to maintain heart health and prevent cardiovascular diseases.</p>
-                                  <form action="/heart"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
-                                </div>
-                          </div>
+                          <img src="static\images\icon\p2_heart_img.png" alt="heart">
+                          <h2>Heart</h2>
+                          <p>Monitor blood pressure, cholesterol, heart rate, and lifestyle habits to maintain heart health and prevent cardiovascular diseases.</p>
+                          <form action="/heart"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
                         </div>
+
                         <div class="p2_card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="700">
-                          <div id="card_img"><img src="static\images\icon\p2_pregnent_women.png" alt="page_2_c3_img"></div>
-                          <div id="card_content">
+                          <img src="static\images\icon\p2_pregnent_women.png" alt="page_2_c3_img">
                                 <h2>Pregnancy Checker</h2>
-                                <div class="p2_c_content">
                                   <p>Check blood pressure, glucose, temperature, and heart rate regularly to identify potential pregnancy risks and ensure a healthy pregnancy.</p>
                                   <form action="/pregnancy"id="check_btn"><button class="check_btn" type="submit">Check</button></form>
-                                </div>
-                            </div>
-                          
-
                         </div>
-                      </div><!--Page 2 Card Box 1-->
 
-                      
+                      </div><!--Page 2 Card Box 1-->
 
                 </div><!--Page 2 Lower  Body-->
 
@@ -299,28 +283,16 @@
           <!--Page 3 Upper Body-->
           <div id="p3_upper_body">
             
-                <!--Page 3 Upper Body image-->
-                <div id="p3_upper_body_image">
-                  <img src="../static/images/image.png" alt="p3_doctor_img">
+              <img src="../static/images/image.png" alt="p3_doctor_img">
+            <div id="p3_txt">
+              <h2 data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">"Empowering Health Through Symptom-Based Disease Analysis"</h2>
 
-                </div><!--Page 3 Upper Body image-->
-                
-              <!--Page 3 Upper Body content box-->
-              <div id="p3_content_box">
-                <!--Page 3 Upper Body content box Heading-->
-                <div id="p3_upper_body_heading"  data-aos="zoom-in">
-                  <p>"Empowering Health Through Symptom-Based Disease Analysis"</p>
-                </div><!--Page 3 Upper Body content box Heading-->
-                
-                <!--Page 3 Upper Body content box text-->
-                <div id="p3_upper_body_text">
-                    <p data-aos="zoom-in" data-aos-delay="500">
+              <p data-aos="zoom-in" data-aos-delay="500" data-aos-easing="ease-in-out" id="p3_txt_2">
                       Thank you for entrusting Health Guard.ai with your health concerns. We understand the importance of accurate information when it comes to your well-being. With our advanced symptom-based disease analysis, we aim to empower you with the knowledge and guidance you need to make informed health decisions. <br> <br>
-                      <br><h2 ></h2>Thank you for choosing Health Guard.ai. <br> <br > We are honored to be your partner in health."</h2>
-                    </p>
-                </div><!--Page 3 Upper Body content box text-->
+                      <br><h2>Thank you for choosing Health Guard.ai.</h2><br><h3> We are honored to be your partner in health."</h3>
+              </p>
 
-              </div><!--Page 3 Upper Body content box-->
+            </div>
           </div><!--Page 3 Upper Body-->
     </div><!--Page 3-->
 

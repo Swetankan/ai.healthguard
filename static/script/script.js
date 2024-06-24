@@ -37,3 +37,13 @@ function removeOption(value) {
         $('#options-list').val(selectedOptions).trigger('change');
     }
 }
+
+var typed = new Typed('#heading1', {
+    strings: ['Smart Health Analyis', 'AI health Guard'],
+
+    showCursor: true,
+    cursorChar: '|',
+    typeSpeed: 70,
+    backSpeed: 50,
+
+  });
