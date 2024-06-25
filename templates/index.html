@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block content %}
+{% block page1 %}
     <!--Page 1-->
  <!-- stats - count particles -->
     <div id="page1" class="background_img">
@@ -73,7 +73,8 @@
           </div><!--page 1 card box-->
       </div><!--page 1 Content box-->  
     </div> <!--Page 1-->
-
+    {% block page2 %}
+    {% endblock %}
     <!--Page 2-->
     <div id="page2" class="background_img">
           <!--image_Page 2-->
@@ -257,7 +258,8 @@
           </div><!--Page 2 Content-->
 
     </div><!--Page 2-->
-
+    {% endblock %}
+    {% block page3 %}
     <!--Page 3-->
     <div id="page3" class="background_img">
           <!--Page 3 Upper Body-->
