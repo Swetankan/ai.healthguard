@@ -279,14 +279,6 @@ body{
   width: 100%;
 }
 
-#p3_upper_body_image
-{
-  display: flex;
-  height: 170%;
-  width: 40%;
-  align-self:baseline;
-  flex-direction: row;
-}
 
 #p3_txt{
   text-align: center;
@@ -315,8 +307,8 @@ body{
 #page_2_body_img{
   display: none;
 }
-#p3_upper_body_image{
-  display: none;
+#p3_upper_body img{
+  display: hidden;
 }
 }
 
