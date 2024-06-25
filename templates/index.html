@@ -18,10 +18,11 @@
        <!-- Include Select2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
-<body id="body">
+<body>
   {% extends "base.html" %}
   {% block content %}
     <!--Page 1-->
+ <!-- stats - count particles -->
     <div id="page1" class="background_img">
       <!--Page 1 DOCTOR IMAGE-->
        <div id="p1_doctor_img" >
@@ -296,8 +297,12 @@
           </div><!--Page 3 Upper Body-->
     </div><!--Page 3-->
 
-  
+</div>
   <script type="text/javascript" src="{{ url_for('static',filename='script/script.js')}}"></script>
+  <script type="text/javascript" src="{{ url_for('static',filename='script/background.js')}}"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+  <!-- stats.js lib --> 
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   {% endblock %}
 </body>
 </html>

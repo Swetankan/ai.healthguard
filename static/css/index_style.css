@@ -1,11 +1,10 @@
-#body{
+body{
   margin: 0;
   padding: 0;
 }
 .background_img
 {
   background-image: url("https://img.freepik.com/premium-vector/abstract-blue-hexagon-gradient-background-with-heartbeat-cardiogram-honeycomb-pattern-futuristic-sci-fi-style-modern-medicine-copy-space-vector-illustration_297535-3401.jpg?w=1060");
-  background-size: cover;
 }
 
 #page1
@@ -15,17 +14,9 @@
   width: 100%;
 }
 
-#p1_doctor_img
-{
-  display: flex;
-  max-height: 100%;
-  width: auto;
-  margin-left: 25px;
-
-}
 #p1_doctor_img img{
-  max-height: 80%;
-  align-self: flex-end;
+  max-height: 500px;
+  appearance: end;
 }
 
 #p1_content_box
@@ -309,8 +300,64 @@
   #p1_doctor_img{
     display: none;
   }
-  page1{
-    he
-  }
+  
+#page1
+{
+  height:93vb;
+  width: auto;
+}
+#page2
+{
+  height:93vb;
+  width: auto;
+}
+}
 
+/* ---- reset ---- */
+
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+  z-index: -0.1;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
 }
