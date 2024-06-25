@@ -50,6 +50,7 @@ body{
   width: 100%;
   align-self: center;
   font-size: 17px;
+  text-align: center;
 }
 
 .p1_card_box
@@ -310,6 +311,12 @@ body{
 {
   height:93vb;
   width: auto;
+}
+#page_2_body_img{
+  display: none;
+}
+#p3_upper_body_image{
+  display: none;
 }
 }
 
