@@ -2,7 +2,10 @@ body{
   margin: 0;
   padding: 0;
 }
-
+.background_img
+{
+  background-image: url("https://img.freepik.com/premium-vector/abstract-blue-hexagon-gradient-background-with-heartbeat-cardiogram-honeycomb-pattern-futuristic-sci-fi-style-modern-medicine-copy-space-vector-illustration_297535-3401.jpg?w=1060");
+}
 #false_nav
 {
   display: flex;
