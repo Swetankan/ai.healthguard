@@ -80,9 +80,7 @@ body{
   display: flex;
   height: 27%;
   width: 27%;
-  align-self:center;
-
-}
+  align-self:center;}
 
 #card_content
 {
@@ -102,9 +100,7 @@ body{
   height: 100vh;
   width: 100%;
   flex-direction: row;
-  overflow: hidden;
-
-}
+  overflow: hidden;}
 
 #page_2_body_img{
   height: 100%;
@@ -309,6 +305,9 @@ body{
 }
 #p3_upper_body img{
   display: none;
+}
+body{
+  flex-direction: column;
 }
 }
 
