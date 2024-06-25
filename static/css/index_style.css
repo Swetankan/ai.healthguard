@@ -104,6 +104,7 @@ body{
   flex-direction: row;
   overflow: hidden;
   background-color: #13E8E9;
+  text-align: center;
 }
 
 #page_2_body_img{
