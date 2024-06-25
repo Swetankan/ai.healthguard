@@ -302,7 +302,7 @@ body{
 #page2
 {
   height:93vb;
-  width: 100%;
+  width: auto;
 }
 #page_2_body_img{
   display: none;
@@ -316,7 +316,7 @@ body{
 #page3
 {
   height: 50vb;
-  width: 100%;
+  width: auto;
 }
 
 }
