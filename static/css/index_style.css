@@ -105,6 +105,7 @@ body{
   overflow: hidden;
   background-color: #13E8E9;
   text-align: center;
+  align-items: center;
   
 }
 
@@ -118,7 +119,6 @@ body{
   height: 100vh;
   width: 85%;
   flex-direction: column;
-  align-items: center;
 }
 
 /* styles.css */
