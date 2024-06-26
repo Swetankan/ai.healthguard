@@ -1,4 +1,59 @@
 {% extends "base.html" %}
 {% block content %}
- <div><h1>Contact</h1></div>
+<style>@import url(../static/css/contact-us.css);</style>
+<div class="contact-us4">
+    <section class="main">
+      <div class="content1">
+              <div class="form-image">
+                <img
+                  class="image-14-icon"
+                  loading="lazy"
+                  alt=""
+                  src="../static/images/public/image-14@2x.png"
+                />
+
+                <div class="form-container">
+                  <div class="form-fields-parent">
+                    <div class="form-fields">
+                      <input
+                        class="form-fields-child"
+                        placeholder="Name"
+                        type="text"
+                      />
+
+                      <input
+                        class="form-fields-item"
+                        placeholder="Email"
+                        type="text"
+                      />
+
+                      <input
+                        class="form-fields-inner"
+                        placeholder="Phone number"
+                        type="text"
+                      />
+
+                      <input
+                        class="group-input"
+                        placeholder="City"
+                        type="text"
+                      />
+
+                      <textarea
+                        class="group-textarea"
+                        placeholder="Message"
+                        rows="{7}"
+                        cols="{26}"
+                      >
+                      </textarea>
+                    </div>
+                    <button class="group-button">
+                      <div class="frame-child10"></div>
+                      <b class="send-message">Send Message</b>
+                    </button>
+                  </div>
+        </div>
+    </section>
+</div>
+  <script type="text/javascript" src="{{ url_for('static',filename='/script/contact-us.js')}}"></script>
 {% endblock %}
